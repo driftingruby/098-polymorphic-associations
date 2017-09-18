@@ -9,6 +9,10 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class='container'>
+      <%= link_to 'Companies', companies_path, class: 'btn btn-primary' %>
+      <%= link_to 'Employees', employees_path, class: 'btn btn-primary' %>
+      <%= yield %>
+    </div>
   </body>
 </html>
